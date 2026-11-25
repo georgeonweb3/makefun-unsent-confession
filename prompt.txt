@@ -1,0 +1,10 @@
+Build a tiny Python program for the make.fun bounty "Unsent: The Micro-Confession Sprint".
+
+The program (main.py) writes exactly one unsent confession to /output/entry.txt (honoring the MAKEFUN_OUTPUT_DIR environment variable if set). The file must contain exactly two parts, separated by a single newline:
+
+1. A To: line naming who the confession was meant for — a role and a place, no real full name or handle: "To: the pharmacist on Ikorodu Road"
+2. The message itself, on exactly one line, written exactly as it was typed, with no explanation after it: "I told you the antibiotics were for my sister. They were for me. I still take the lift to the third floor so I don't have to pass your counter."
+
+Constraints: the whole file is 178 characters, the message is 143 characters (under the 200-character judge cap), total under the 260-character gate. The confession must feel specific and honest — a real lie and an ongoing avoidance ritual — not a joke, greeting, or motivational line. The To: line and the message must need each other: swapping the addressee would break it.
+
+Also include a README.md (from the competition's readme template, with the make.fun badges and referral code eqkgefdh) and an MIT LICENSE opening with SPDX-License-Identifier: MIT. Verify by running main.py locally and checking /output/entry.txt content and character counts.
