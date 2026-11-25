@@ -16,6 +16,12 @@ ENTRY = (
     "your counter."
 )
 
+# Competition gates: whole file 1-260 chars, message at most 200 chars.
+_TO, _, _MESSAGE = ENTRY.partition("\n")
+assert 1 <= len(ENTRY) <= 260, f"entry {len(ENTRY)} chars, must be 1-260"
+assert len(_MESSAGE) <= 200, f"message {len(_MESSAGE)} chars, must be <=200"
+assert "\n" not in _MESSAGE, "message must be a single line"
+
 
 def main() -> None:
     out_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
