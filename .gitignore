@@ -1,0 +1,12 @@
+STATUS.md
+requirements.json
+info.json
+leaderboard.json
+rules.txt
+field-titles.txt
+tournament.py
+tournament.json
+fetch-kit.mjs
+kit.tar.gz
+kit/
+*.tar.gz
